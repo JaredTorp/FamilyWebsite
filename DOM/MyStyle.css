@@ -1,0 +1,182 @@
+body{
+    
+    background-image: url("background2.jpeg");
+    background-attachment: fixed;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif ;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+}
+
+h1{
+
+text-align: center;
+font-family: "Comic Sans MS", "Comic Sans", cursive;
+color: white;
+background-color: rgb(39, 39, 39);
+padding: 30px;
+font-size: 30pt;
+
+
+
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+/*This formats all the links in the website*/
+a{
+    color: #909090;
+
+}
+
+a:hover{
+    color: lightgray;
+
+}
+
+/*List/navigation bar format*/
+nav{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #383838	;
+  
+}
+
+nav div a{  
+
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 12px 20px;
+  text-decoration: none;
+  float: left;
+
+}
+
+nav div a:hover{
+  background-color: #111;
+}
+
+nav div a.active{
+  background-color: black;
+  color: white;
+}
+
+nav div a:not(.active){
+  color: #909090;
+}
+
+nav div a:hover:not(.active) {
+  background-color: #989898 ;
+    color: white;
+}
+
+
+ul {
+ 
+  padding: 12px 20px;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: large;
+  
+
+ 
+}
+
+
+
+ul li {
+  background: rgb(99, 99, 99);;
+  margin-top: 0px;
+  margin-left: 700px;
+  margin-right: 700px;
+  margin-bottom: 2px;
+  color: white;
+}
+  
+  table{
+
+    border-collapse: collapse;
+        left: 100%;
+        width: 20%;
+        height: 20%;
+        background-color: rgb(99, 99, 99);
+        color: white;
+        margin-left:auto; 
+        margin-right:auto;
+        font-family: Arial, Helvetica, sans-serif;
+
+  } 
+  th, td {
+   
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+
+    
+  }
+  tr:nth-child(even) {background-color: #353434;}
+  
+  .img-container {
+   
+    
+    width: 50%;
+    max-height: 100%;
+    /* padding: 5px;  */
+  }
+
+  .img-container img {
+    float:left;
+    width:150px;
+    height:300px;
+  }
+  .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.imgCenter{
+   margin-left: auto; 
+}
+
+/*These classes are used on the family page on the website*/
+.border {
+  border: 2px solid white;
+  padding:10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25pt;
+  background-color: #383838;
+}
+
+    .format{
+      overflow: auto;
+
+}
+
+.button {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+}

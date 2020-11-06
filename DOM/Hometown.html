@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <link rel="stylesheet" type="text/css" href="MyStyle.css">
+    <script src="myScript.js"></script>
+<style>
+#container {
+  width: 1920px;
+  height: 400px;
+  position: relative;
+  
+}
+
+
+</style>
+<head>
+    <meta name="author" content="Jared Torp">
+    <h1> <center>Jared Torp's #epic Website</center></h1>
+    <nav>
+        <div> <a  href="Home.html"> Home</a> </div>
+        <div> <a href="Family_Page.html"> Family</a> </div>
+        <div> <a href="Vacation_Page.html"> Vacation</a></div>
+        <div> <a href="Hobby_Page.html"> Hobbies</a></div>
+        <div> <a class = "active" href="Hometown.html">  Hometown</a></div>
+       
+      </nav>
+  
+    
+
+    <center> <h2> My Hometown</h2>
+       <p style="float: lef; font-size: 20pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="indianapolis.jpg" style="width: 100%">Indianapolis, Indiana</p>
+        </center
+</head>
+<body>
+ 
+    <Center>
+ <p>I was born in Cincinnati, Ohio. When I was about 7, my family moved to Greenwood, Indiana. Greenwood is on the south side of Indianapolis. 
+     <br> I live in a cookie cutter house lived there for about 15 years.</p>
+     <p>Click on some buttons to learn some facts about Indiana!</p>
+
+
+
+<button class = "button" type="button" onclick="button1()">Fact #1</button>
+<button class = "button" type="button" onclick="button2()">Fact #2</button>
+<button class = "button" type="button" onclick="button3()">Fact #3</button>
+<button class = "button" type="button" onclick="button4()">Fact #4</button>
+<p id="test"></p>
+</Center>
+
+<center>
+    <p><button id="carButton" style = "opacity: 0" class = "button"  onclick="myMove(); playAudio()">Click for a suprise</button></p> 
+</center>
+
+
+<audio id="myAudio">
+   
+    <source src="Neil deGrasse Tyson Race Car Sound.mp3" type="audio/mpeg">
+   
+  </audio>
+<div id ="container">
+ 
+    <img id = "animate" src="indyCar.png" style="position: absolute;left: -4070px;opacity: 0;" />
+    
+  </div>
+
+
+</body>
+</html>

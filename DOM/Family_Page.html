@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <link rel="stylesheet" type="text/css" href="MyStyle.css">
+    <style>
+        * {
+      box-sizing: border-box;
+    }
+      .img-container {
+        float: left;
+        width: 25%;
+        height: 100%;
+        padding: 2%;
+       
+      }
+      .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+     
+    }
+    
+    .accordion {
+  background-color: black;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: rgb(211, 211, 211);
+  overflow: hidden;
+}
+
+    </style>
+<head>
+    <meta name="author" content="Jared Torp">
+    <h1> <center>Jared Torp's #epic Website</center></h1>
+    <nav>
+      <div> <a href="Home.html"> Home</a> </div>
+      <div> <a class = "active"href="Family_Page.html"> Family</a> </div>
+      <div> <a href="Vacation_Page.html"> Vacation</a></div>
+      <div> <a href="Hobby_Page.html"> Hobbies</a></div>
+      <div> <a href="Hometown.html">  Hometown</a></div>
+    </nav>
+
+
+    <h2><center>My Family</center></h2>
+    
+
+       
+  <center>
+    
+<div class="imgCenter">
+  <div class="img-container">
+    <img src="KirstenJared.jpg" style="width:100%"></a>
+  </div>
+
+  
+  <div class="img-container">
+   <img src="oldFamilyPhoto.jpg"  style="width:100%;"></a>
+  </div>
+
+  <div class="img-container">
+    <img src="FamilyPhoto1.jpg" style="width:100%;"></a>
+   </div>
+  
+
+  <div class="clearfix">
+    <div class="img-container">
+    <img src="GrandCanyon.jpg"  style="width:100%"></a>
+    </div>
+  </div>
+
+</div>
+   </center>
+
+</head>
+
+
+<button class="accordion">Dad</button>
+<div class="panel">
+  <div class = "border" >
+    <div class="format">
+    <img class="img1" src="dadphoto.jpg"  style="width: 20%; height: 20%; float: right">
+    My Father's name is William Eric Torp. He is an Electrical Engineer for <a href="https://www.endress.com/en"
+      target="_blank"> Endress + Hauser</a>. He is a hard-working man and loves to Ice Fish in the Winter.
+  </div>
+</div>  
+</div>
+<button class="accordion">Kirsten</button>
+<div class="panel">
+  <div class = "border">
+    <div class="format">
+    <img class="img2" src="kirstenPhoto.jpg"  style="width: 15%; height: 15%; float: left">
+    My Sister, Kirsten, is a manager at <a href="https://www.chipotle.com/" target="_blank">Chipotle</a>. She is very
+    passionate with her job and loves her cat, Zora.
+  </div>
+</div>
+</div>
+<button class="accordion">Mom</button>
+<div class="panel">
+  <div class="border">
+    <div class="format">
+        <img class="img2" src="momPhoto.jpg" style="width: 20%; height: 20%; float: right">
+        My Mother is the light of my world. Unfortunately, she passed away in 2017 due to a lifelong illness.
+        There are so many things I can say about her: Talented, Intelligent, Compassionate, Joyful, Honest, Loving.
+        She was a Christ following servant of Christ and spread so much love to everyone around her. It is hard to live in
+        the absence of a mom, but I cannot wait to see her again.
+      </div>
+
+</div>
+
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+
+<!-- 
+<body>
+  <div class = "border" >
+    <div class="format">
+    <img class="img1" src="dadphoto.jpg"  style="width: 20%; height: 20%; float: right">
+    My Father's name is William Eric Torp. He is an Electrical Engineer for <a href="https://www.endress.com/en"
+      target="_blank"> Endress + Hauser</a>. He is a hard-working man and loves to Ice Fish in the Winter.
+  </div>
+</div>  
+  
+  
+  <div class = "border">
+    <div class="format">
+    <img class="img2" src="kirstenPhoto.jpg"  style="width: 15%; height: 15%; float: left">
+    My Sister, Kirsten, is a manager at <a href="https://www.chipotle.com/" target="_blank">Chipotle</a>. She is very
+    passionate with her job and loves her cat, Zora.
+  </div>
+</div>
+
+<div class="border">
+  <div class="format">
+      <img class="img2" src="momPhoto.jpg" style="width: 20%; height: 20%; float: right">
+      My Mother is the light of my world. Unfortunately, she passed away in 2017 due to a lifelong illness.
+      There are so many things I can say about her: Talented, Intelligent, Compassionate, Joyful, Honest, Loving.
+      She was a Christ following servant of Christ and spread so much love to everyone around her. It is hard to live in
+      the absence of a mom, but I cannot wait to see her again.
+    </div>
+  </div> -->
+
+  
+ 
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <link rel="stylesheet" type="text/css" href="MyStyle.css">
+    <script src="myScript.js"></script>
+    <!--Use an inline style for the list below and format it so it looks good-->
+    <style>
+        * {
+      box-sizing: border-box;
+    }
+      .img-container {
+        float: left;
+        width: 25%;
+        height:100%;
+        padding: 5px;
+      }
+      .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    #div1 {
+  width: 390px;
+  height: 200px;
+  padding: 5px;
+  border: 1px solid #aaaaaa;
+  background-image: url("endZone.jpg");
+  
+}
+    </style>
+<head>
+    <meta name="author" content="Jared Torp">
+    <h1> <center>Jared Torp's #epic Website</center></h1>
+    <nav>
+      <div> <a href="Home.html"> Home</a> </div>
+      <div> <a href="Family_Page.html"> Family</a> </div>
+      <div> <a href="Vacation_Page.html"> Vacation</a></div>
+      <div> <a class = "active" href="Hobby_Page.html"> Hobbies</a></div>
+      <div> <a href="Hometown.html">  Hometown</a></div>
+    </nav>
+
+
+    <h2> <center>Hobbies</center></h2>
+    <div class="clearfix">
+        <div class="img-container">
+          <img src="TrumpDnD.png" alt="Italy" style="width:100%">
+        </div>
+        <div class="img-container">
+          <img src="hockeyImage.jpg" alt="Italy" style="width:100%">
+        </div>
+        <div class="img-container">
+          <img src="KorgSynth.jpg" alt="Italy" style="width:100%">
+        </div>
+          <div class="img-container">
+            <img src="PCMotherboard.jpg" alt="Italy" style="width:100%">
+         </div>
+      </div>
+    
+    
+
+</head>
+<body>
+  
+    <center>
+        <p>I have a lot of different Hobbies. In my spare time, I like to play video games. My dad introduced me to the NES when I was a kid. 
+            <br>
+            I also have a thing for computers. I just built my first computer a few weeks ago. It was a great experience! (It was not a great experience for my wallet)
+            <br>
+            I also love music. I make my own playlists and follow many artists. 
+            <br>
+            </p>
+        
+            <p>Here is a list of my like/hobbies</p>
+          </center>
+            <ul style="list-style-type:disc;" align = "left">
+                <li>Video Games</li>
+                <li>Sports (Hockey, Football)</li>
+                <li>Music/Synthesizers</li>
+                <li>Board Games</li>
+                <li>Role Playing Games (Such as Dungeons & Dragons)</li>
+                <li>Movies and futuristic TV shows</li>
+            </ul> 
+            <Center>
+            <p>Drag the football to score a touchdown!</p>
+          </Center>
+            <div id="div1" style="position: absolute; right: 200px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <img id="drag1" src="Football.jpg" draggable="true" ondragstart="drag(event)" width="375" height="150">
+
+            
+</body>
+</html>
